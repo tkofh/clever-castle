@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://use.typekit.net/dvz5wlv.css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -27,7 +34,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/font-awesome.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -37,6 +44,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss'
   ],
+  eslint: {
+    fix: true
+  },
   /*
    ** Nuxt.js modules
    */
