@@ -24,7 +24,7 @@
     "@fortawesome/pro-light-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.8",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "gsap": "^3.0.1",
+    "gsap": "^3.6.0",
     "nuxt": "^2.0.0",
     "vue": "latest"
   },
